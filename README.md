@@ -211,3 +211,45 @@
 
 ![Иллюстрация к проекту](https://github.com/DashaRazz/Legen_wait_wait_dary/blob/master/ER.png)
 ![Иллюстрация к проекту](https://github.com/DashaRazz/Legen_wait_wait_dary/blob/master/даталогическая%20модель.png)
+
+## Список интерфейсов
+
+Доступные гостю:
+- Интерфейс авторизации
+- Интерфейс регистрации
+- Интерфейс главной страницы с постами
+- Интерфейс страницы поста
+- Интерфейс списка пользователей
+- Интерфейс личных страниц
+
+Доступные пользователю:
+- Интерфейс главной страницы с постами
+- Интерфейс страницы поста
+- Интерфейс списка пользователей
+- Интерфейс личных страниц
+- Интерфейс создания поста
+- Интерфейс создания статуса
+- Интерфейс редактирования поста
+
+### Форма входа
+![Иллюстрация к проекту](https://github.com/DashaRazz/Legen_wait_wait_dary/blob/master/Авторизация.png)
+
+
+### Добавление поста
+![Иллюстрация к проекту](https://github.com/DashaRazz/Legen_wait_wait_dary/blob/master/выкладывание%20поста.jpg)
+
+
+### Главная страница
+![Иллюстрация к проекту](https://github.com/DashaRazz/Legen_wait_wait_dary/blob/master/посты.jpg)
+
+
+### Страница с пользователями 
+![Иллюстрация к проекту](https://github.com/DashaRazz/Legen_wait_wait_dary/blob/master/люди.jpg)
+
+
+### Страница поста
+![Иллюстрация к проекту](https://github.com/DashaRazz/Legen_wait_wait_dary/blob/master/пост.jpg)
+
+
+### Добавление статуса 
+![Иллюстрация к проекту](https://github.com/DashaRazz/Legen_wait_wait_dary/blob/master/статус.jpg)
