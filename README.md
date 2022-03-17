@@ -208,3 +208,6 @@
 | User | Comment | Один ко многим | Один пользователь может добавлять много комментариев |
 | Article | Comment | Один ко многим | Под одной статьей может быть много комментариев |
 | User | Status | Один ко многим | Один пользователь может добавлять много статусов |
+
+![Иллюстрация к проекту](https://github.com/DashaRazz/Legen_wait_wait_dary/blob/master/ER.png)
+![Иллюстрация к проекту](https://github.com/DashaRazz/Legen_wait_wait_dary/blob/master/даталогическая%20модель.png)
