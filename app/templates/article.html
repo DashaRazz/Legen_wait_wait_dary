@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ article_d.title }}
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+    {% if current_user.id == article_d.user_id %}
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="/posts/{{ article_d.id }}/del" class="btn btn-danger btn-sm me-md-2">Удалить</a>
+                <a href="/posts/{{ article_d.id }}/update" class="btn btn-secondary btn-sm">Редактировать</a>
+        </div>
+            {% endif %}
+    <h2>{{ article_d.title }}</h2>
+
+        <div class="alert alert-light">
+            <p>{{ article_d.text }}</p>
+            <p class="fw-lighter text-end"><i>Дата: {{ article_d.date.date() }}</i></p>
+{#            {% if current_user.id == article_d.user_id %}#}
+{#            <a href="/posts/{{ article_d.id }}/del" class="btn btn-danger btn-sm">Удалить</a>#}
+{#                <a href="/posts/{{ article_d.id }}/update" class="btn btn-info btn-sm">Редактировать</a>#}
+{#            {% endif %}#}
+        </div>
+    <h3>Комментарии</h3>
+    {% if current_user.is_authenticated %}
+    <form method="post">
+        <textarea name="text" id="text" class="form-control"></textarea><br>
+        <input type="submit" class="btn btn-warning">
+    </form>
+        <br>
+    {% endif %}
+        {% for i in comments %}
+            <div class="alert alert-dark opacity-50">
+            <p><i>@{{ i.comment_author.nickname }}:  {{ i.text }}</i></p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

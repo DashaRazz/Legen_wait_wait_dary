@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Авторизация
+{% endblock %}
+
+{#{% block body %}#}
+{#<div class="container mt-5">#}
+{#    <h1>Авторизация</h1>#}
+{#    <form method="POST">#}
+{#        <label for="email">Email Address</label>#}
+{#    <input#}
+{#      type="email"#}
+{#      class="form-control"#}
+{#      id="email"#}
+{#      name="email"#}
+{#      placeholder="Enter email"#}
+{#    />#}
+{#        <label for="password">Password</label>#}
+{#    <input#}
+{#      type="password"#}
+{#      class="form-control"#}
+{#      id="password"#}
+{#      name="password"#}
+{#      placeholder="Enter Password"#}
+{#    /><br>#}
+{#        <input type="submit" class="btn btn-success">#}
+{#        <input type="text" name="nickname" id="nickname" class="form-control" value="Имя пользователя"><br>#}
+{#        <input type="text" name="email" id="email" class="form-control" value="email"></input><br>#}
+{#        <input type="text" name="password" id="password" class="form-control" value="Пароль"></input><br>#}
+{#        <input type="submit" class="btn btn-success">#}
+{#    </form>#}
+{#</div>#}
+{#{% endblock %}#}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Авторизация</h1>
+<form method="POST">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Пароль</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+  </div>
+  <button type="submit" class="btn btn-warning">Войти</button>
+</form>
+</div>
+{% endblock %}

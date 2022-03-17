@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Люди
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1>Люди</h1>
+
+        {% for i in people %}
+        <div class="alert alert-dark w-50 p-3">
+            <h2>@{{ i.nickname }}</h2>
+            <p>{{ i.email }}</p>
+            <a href="/people/{{ i.id }}" class="btn btn-warning">Перейти на страницу</a>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

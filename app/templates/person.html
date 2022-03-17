@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ person.nickname }}
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+    {% if current_user.is_authenticated and current_user.id == person.id %}
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="/to-create-status" class="btn btn-warning me-md-2">Что нового?</a>
+        </div>
+    {% endif %}
+        <p class="text-center fs-1">@{{ person.nickname }}</p>
+        {% for i in states %}
+            {% if i.user_id == person.id %}
+        <div class="alert alert-dark opacity-50">
+            <p class="fs-4">{{ i.text }}</p>
+            <p class="fw-lighter text-end"><i>{{ i.date }}</i></p>
+        </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}
